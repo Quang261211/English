@@ -27,6 +27,81 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:#8993a9;font-s
 @keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:48px}.hero-card{display:none}.layout{grid-template-columns:1fr;gap:16px}.sidebar{position:static;padding:13px}.side-nav{display:flex;overflow:auto}.side-nav a{white-space:nowrap}.side-title,.side-note{display:none}.cards{grid-template-columns:1fr}.legend{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:520px){.topbar{padding:0 15px;height:60px}.top-link{font-size:11px;padding:8px 10px}.hero{padding:39px 0 30px}.hero h1{font-size:43px}.hero p{font-size:14px}.shell{width:92vw}.section-head h2{font-size:23px}.tense-card{padding:18px}.panel{padding:18px}.compare-grid{grid-template-columns:1fr}.legend{grid-template-columns:repeat(2,1fr)}}
+
+/* Vivid, high-contrast study theme */
+:root{--ink:#f5f4ff;--muted:#b7c1df;--line:#3b466d;--paper:#202949;--blue:#73a0ff;--violet:#bea2ff;--mint:#5ce4ca;--peach:#ff987c;--shadow:0 20px 55px #05091866;color-scheme:dark}
+body{background:radial-gradient(circle at 5% 0%,#263e70 0,transparent 30%),radial-gradient(circle at 95% 16%,#57375e 0,transparent 28%),radial-gradient(circle at 70% 95%,#164b50 0,transparent 30%),#11172d;color:var(--ink)}
+.topbar{background:#11172de8;border-bottom:1px solid #394568}
+.brand{color:#fff}.brand span{color:#70e6d1}
+.top-link{background:#202949;border-color:#46547e;color:#e4e8ff}.top-link.primary{background:linear-gradient(110deg,#4e8fff,#9c70f2 58%,#ec7f9b);color:#fff}
+.hero h1{color:#fff}.gradient{background:linear-gradient(100deg,#61e4d0,#7db0ff 42%,#c6a0ff 72%,#ff9b7e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#c3cce5}.eyebrow{background:#26345b;border-color:#40517e;color:#8cebd9}
+.hero-card{background:linear-gradient(145deg,#202d50,#25203f);border-color:#495782;box-shadow:var(--shadow)}
+.hero-card:after{background:linear-gradient(135deg,#4b8dce,#a57ae2);opacity:.28}.hero-card small{color:#b8c4e7}.hero-card strong{color:#ffe080}
+.stat{background:#202949;border-color:#46547e;color:#dfe5ff}
+.sidebar{background:#1a2340eF;border-color:#445174}.side-title{color:#9daed7}.side-nav a{color:#c0c9e1}.side-nav a:hover{background:#2c3b68;color:#91e9dc}.side-note{border-color:#3c496d;color:#aeb9d6}
+.section-head h2,.panel h2{color:#fff}.section-head p,.panel-intro{color:#b7c1df}
+.search input{background:#1b2543;border-color:#46547e;color:#fff}.search input::placeholder{color:#8796bb}
+.filter{background:#1b2543;border-color:#46547e;color:#cad3ed}.filter.active{background:#35477b;color:#fff;border-color:#7897ef}
+.results-line{color:#a9b5d4}
+.tense-card{background:linear-gradient(145deg,#202b4a,#1a2340);border-color:#465477;box-shadow:0 14px 38px #060b1d66}
+.tense-card h3{color:#fff}.vn{color:#aebbd9}.purpose{color:#c1cbe3}
+.group-tag{background:color-mix(in srgb,var(--accent) 17%,#202949);color:var(--accent)}
+.formula{background:color-mix(in srgb,var(--accent) 15%,#151d37);border-color:color-mix(in srgb,var(--accent) 40%,#273253)}
+.formula b{color:var(--accent)}.formula code{color:#f1f3ff}
+.signals{color:#aebbd9}.expand{background:#35436b;color:#e2e8ff}.expand:hover{background:#475b8e}
+.details{border-color:#465477}.detail-label{color:#91a2c9}.detail-text{color:#c1cbe3}.example{background:#131b34;color:#dce4ff}.example strong{color:var(--accent)}
+.empty{background:#202949;border-color:#56658e;color:#c2cce5}
+.panel{background:linear-gradient(145deg,#202b4a,#1a2340);border-color:#465477;box-shadow:var(--shadow)}
+table th,table td{border-color:#3b4668}table th{color:#aab9df;background:#273456}table td{color:#d2daf0}td:first-child{color:#9fc4ff}td code{color:#e3e9ff}
+.legend-item{background:#273456;border-color:#465477}.legend-item b{color:#7de5d5}.legend-item span{color:#b2bfdc}
+.compare{background:linear-gradient(135deg,#283557,#202949);border-color:#465477}.compare h3{color:#fff}.compare p{color:#c0cbe3}.compare em{color:#80e6d6}
+.tip{background:#153b43;border-color:#28655f;color:#a8f0df}
+footer{border-color:#3b4668;color:#aab7d4}footer a{color:#91b5ff}
+
+
+.concept-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:20px 0}
+.concept-card{padding:17px;border-radius:17px;border:1px solid #465477;background:#263252;min-width:0}
+.concept-kicker{font:800 9px Manrope;letter-spacing:.13em;color:var(--accent)}
+.concept-card h3{font:800 14px Manrope;line-height:1.35;color:#fff;margin:10px 0 7px}
+.concept-card p{font-size:11px;line-height:1.7;color:#c2cce3;margin:0}
+.concept-example{margin-top:12px;border-radius:11px;padding:10px;background:#151e38;color:#e1e8ff;font-size:11px;line-height:1.65}
+.c-cyan{--accent:#69e7d1}.c-coral{--accent:#ff987c}.c-violet{--accent:#c1a2ff}.c-yellow{--accent:#ffda75}
+.deep-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+.deep-note{padding:18px;border:1px solid #465477;border-radius:17px;background:#1a2441}
+.deep-note h3{font:800 14px Manrope;color:#fff;margin:0 0 10px}
+.deep-note p,.deep-note li{font-size:12px;line-height:1.8;color:#c4cee6}
+.deep-note ol,.deep-note ul{margin:0;padding-left:19px}
+.deep-note b{color:#83e8d8}
+.quiz-section{padding:20px 0;border-top:1px solid #3b4668;margin-top:12px}
+.quiz-heading{display:flex;justify-content:space-between;align-items:start;gap:15px;margin-bottom:16px}
+.quiz-label{font:800 9px Manrope;letter-spacing:.15em;color:#83e8d8}
+.quiz-heading h3{font:800 19px Manrope;color:#fff;margin:6px 0}
+.quiz-heading p{font-size:12px;color:#b7c1df;margin:0}
+.quiz-count{font:800 9px Manrope;letter-spacing:.08em;color:#dce4ff;background:#303d65;border:1px solid #52618c;border-radius:999px;padding:8px 10px;white-space:nowrap}
+.quiz-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.quiz-item{padding:15px;border:1px solid #465477;border-radius:15px;background:#1a2441;min-width:0}
+.quiz-q{font-size:12px;font-weight:700;line-height:1.65;color:#f3f5ff;margin:0 0 11px}
+.quiz-q .qno{color:#7fe7d4;font:800 10px Manrope;margin-right:6px}
+.quiz-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.quiz-option{display:flex;align-items:start;gap:7px;padding:9px;border-radius:10px;background:#273455;border:1px solid #415078;color:#dce4fa;font-size:11px;line-height:1.5;cursor:pointer}
+.quiz-option:hover{border-color:#8b9fe8;background:#303e67}
+.quiz-option input{margin:2px 0 0;accent-color:#81e7d5;flex:0 0 auto}
+.fill-input{width:100%;height:40px;border:1px solid #53628b;border-radius:10px;padding:0 11px;background:#111a33;color:#fff;font:600 12px "DM Sans";outline:none}
+.fill-input:focus{border-color:#7de7d3;box-shadow:0 0 0 3px #6ce5ce22}
+.fill-input::placeholder{color:#8c9aba}
+.quiz-feedback{display:none;margin-top:10px;padding:10px;border-radius:10px;font-size:11px;line-height:1.65}
+.quiz-feedback.good{display:block;background:#123b36;border:1px solid #287c69;color:#aaf0dd}
+.quiz-feedback.bad{display:block;background:#462b38;border:1px solid #8d5368;color:#ffd0da}
+.quiz-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:15px}
+.quiz-button{border:0;border-radius:11px;padding:11px 15px;background:linear-gradient(105deg,#4c9cfa,#8a6df2);color:white;font:800 11px "DM Sans";cursor:pointer}
+.quiz-button:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.quiz-button.secondary{background:#303d65;border:1px solid #53638d;color:#e2e8ff}
+.quiz-result{font-size:12px;font-weight:700;color:#b8c7e9;margin-left:auto}
+@media(max-width:900px){.concept-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.deep-columns,.quiz-list{grid-template-columns:1fr}.quiz-heading{display:block}.quiz-count{display:inline-block;margin-top:10px}}
+@media(max-width:420px){.concept-grid{grid-template-columns:1fr}.quiz-options{grid-template-columns:1fr}.quiz-result{width:100%;margin:4px 0 0}}
+
 </style>
 </head>
 <body>
@@ -49,7 +124,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:#8993a9;font-s
     <aside class="sidebar">
       <div class="side-title">STUDY MENU</div>
       <nav class="side-nav">
-        <a href="#tenses">13 tenses</a><a href="#overview">Formula table</a><a href="#building-blocks">Symbols</a><a href="#compare">Easy comparisons</a>
+        <a href="#tenses">13 tenses</a><a href="#deep-dive">Deep dive</a><a href="#practice">Practice quiz</a><a href="#overview">Formula table</a><a href="#building-blocks">Symbols</a><a href="#compare">Comparisons</a>
       </nav>
       <div class="side-note">Tip: Don't rely on signal words alone. Read the meaning and the time relationship in the whole sentence.</div>
     </aside>
@@ -66,7 +141,28 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:#8993a9;font-s
         <div class="empty" id="empty">No matching tense. Try another keyword.</div>
       </section>
 
-      <section class="panel" id="overview">
+      
+<section class="panel" id="deep-dive">
+  <h2>Deep dive: understand the tense, not just the keyword</h2>
+  <p class="panel-intro">A reliable way to choose a tense is to identify the reference time first, then decide whether you are describing a fact, an action in progress, a completed result, or the duration of an activity.</p>
+  <div class="concept-grid">
+    <article class="concept-card c-cyan"><span class="concept-kicker">01 · SIMPLE</span><h3>Facts, habits & whole events</h3><p>Use a simple form to state a routine, fact, or event as a whole. It does not focus on the action's progress.</p><div class="concept-example">She <b>plays</b> tennis every Sunday. · We <b>visited</b> Hue last summer.</div></article>
+    <article class="concept-card c-coral"><span class="concept-kicker">02 · CONTINUOUS</span><h3>In progress around a time</h3><p>Use <b>be + V-ing</b> to put the reader inside an ongoing or temporary action at a reference time.</p><div class="concept-example">She <b>is studying</b> now. · At 8 p.m., she <b>was studying</b>.</div></article>
+    <article class="concept-card c-violet"><span class="concept-kicker">03 · PERFECT</span><h3>Earlier than a reference point</h3><p>Use <b>have + V3</b> to connect an earlier action to a reference time: now, a past moment, or a future deadline.</p><div class="concept-example">I <b>have finished</b>. · They <b>had left</b> before we arrived.</div></article>
+    <article class="concept-card c-yellow"><span class="concept-kicker">04 · PERFECT CONTINUOUS</span><h3>Duration up to a reference point</h3><p>Use <b>have been + V-ing</b> to emphasize how long an activity has continued up to now, a past point, or a future point.</p><div class="concept-example">He <b>has been reading</b> for an hour. · By June, he <b>will have been working</b> here for a year.</div></article>
+  </div>
+  <div class="deep-columns">
+    <article class="deep-note"><h3>Build questions and negatives</h3><ol><li>Find the first auxiliary verb: <b>be, have, will</b> or a form of <b>do</b>.</li><li>For a negative, place <b>not</b> after the first auxiliary: <i>has not finished</i>.</li><li>For a question, move the first auxiliary before the subject: <i>Have you finished?</i></li><li>If Present Simple or Past Simple has no auxiliary, add <b>do / does / did</b>: <i>Does she work?</i> / <i>Did they go?</i></li></ol></article>
+    <article class="deep-note"><h3>Position of common time expressions</h3><ul><li><b>Already / just / ever / never</b> often appear between the auxiliary and V3: <i>has already left</i>.</li><li><b>Yet</b> commonly appears at the end of questions and negatives: <i>Have you called yet?</i></li><li><b>Since</b> + starting point; <b>for</b> + duration: <i>since Monday</i> / <i>for three days</i>.</li><li><b>By</b> introduces a deadline or reference point: <i>by Friday</i>, <i>by the time we arrive</i>.</li></ul></article>
+  </div>
+  <div class="deep-columns">
+    <article class="deep-note"><h3>Three traps to avoid</h3><ul><li><b>Finished past time:</b> use Past Simple with <i>yesterday, last year, in 2020</i>; do not normally pair these with Present Perfect.</li><li><b>Stative verbs:</b> verbs such as <i>know, believe, own, need</i> are not usually continuous when they describe a state.</li><li><b>Third-person -s:</b> in Present Simple affirmative sentences, add -s / -es with <i>he, she, it</i>; after <i>does</i>, return to V1.</li></ul></article>
+    <article class="deep-note"><h3>Future time clauses</h3><p>In time clauses introduced by <b>when, before, after, as soon as</b> and <b>until</b>, English commonly uses a present form for a future meaning.</p><div class="concept-example">Correct: <b>I'll call you when I arrive.</b><br>Not usually: I'll call you when I will arrive.</div></article>
+  </div>
+  <div class="tip"><b>Important:</b> Signal words are clues, not automatic answers. For example, <i>for</i> can appear with several tenses. Read the whole sentence and ask what the speaker wants to emphasize.</div>
+</section>
+
+<section class="panel" id="overview">
         <h2>Formula overview</h2>
         <p class="panel-intro">A compact comparison of the main verb patterns. “V3” means the past participle; “V-ing” is the -ing form.</p>
         <div class="table-wrap">
@@ -95,7 +191,23 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:#8993a9;font-s
         <div class="tip"><b>Example:</b> go – went – gone (V1 – V2 – V3). For regular verbs, V2 and V3 commonly end in <b>-ed</b>: work – worked – worked.</div>
       </section>
 
-      <section class="panel" id="compare">
+      
+<section class="panel" id="practice">
+  <h2>Practice zone</h2>
+  <p class="panel-intro">Try both activities. Submit each part to see your score, the correct answer and a short explanation. There are 13 questions in each part.</p>
+  <div class="quiz-section">
+    <div class="quiz-heading"><div><span class="quiz-label">PART A · MULTIPLE CHOICE</span><h3>Choose A, B, C or D</h3><p>Read the time reference and meaning before choosing.</p></div><span class="quiz-count">13 QUESTIONS</span></div>
+    <div class="quiz-list" id="mcqList"></div>
+    <div class="quiz-actions"><button class="quiz-button" id="checkMcq" type="button">Check answers</button><button class="quiz-button secondary" id="resetMcq" type="button">Try again</button><div class="quiz-result" id="mcqResult" aria-live="polite">Not submitted yet</div></div>
+  </div>
+  <div class="quiz-section">
+    <div class="quiz-heading"><div><span class="quiz-label">PART B · FILL IN THE BLANKS</span><h3>Complete the sentence</h3><p>Type the correct verb form. Contractions are accepted where relevant.</p></div><span class="quiz-count">13 QUESTIONS</span></div>
+    <div class="quiz-list" id="fillList"></div>
+    <div class="quiz-actions"><button class="quiz-button" id="checkFill" type="button">Check answers</button><button class="quiz-button secondary" id="resetFill" type="button">Try again</button><div class="quiz-result" id="fillResult" aria-live="polite">Not submitted yet</div></div>
+  </div>
+</section>
+
+<section class="panel" id="compare">
         <h2>Easy comparisons</h2>
         <p class="panel-intro">Some tenses look similar. Focus on what the speaker wants to emphasize.</p>
         <div class="compare-grid">
@@ -156,5 +268,92 @@ document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',(
  btn.classList.add('active');activeFilter=btn.dataset.filter;render();
 }));
 render();
+
+const mcqQuestions = [
+ {q:"Every weekday, Nam ___ to school by bus.",o:["go","goes","is going","has gone"],a:1,e:"Present Simple describes a regular routine. With he / she / it, add -s or -es."},
+ {q:"Listen! Someone ___ the piano in the next room.",o:["plays","is playing","has played","played"],a:1,e:"Listen! signals an action happening at the moment: am / is / are + V-ing."},
+ {q:"I ___ my keys, so I can't open the door.",o:["have lost","lost yesterday","had lost tomorrow","am losing every day"],a:0,e:"The past action has a result now: I do not have the keys. Present Perfect is appropriate."},
+ {q:"She ___ for the exam since 7 a.m. and she is still studying.",o:["revises","revised","has been revising","had revised"],a:2,e:"The activity began in the past and continues now; the duration/process is emphasized."},
+ {q:"They ___ to Da Nang last summer.",o:["go","are going","have gone","went"],a:3,e:"Last summer is a finished past time, so use Past Simple (V2)."},
+ {q:"At 9 p.m. last night, we ___ a documentary.",o:["watch","were watching","have watched","will watch"],a:1,e:"The sentence gives a specific time in the past when the action was in progress: was / were + V-ing."},
+ {q:"When I arrived, the meeting ___ already ___.",o:["has / started","was / starting","will / start","had / started"],a:3,e:"The meeting started before another past event (my arrival), so use Past Perfect."},
+ {q:"His hands were dirty because he ___ in the garden all morning.",o:["works","has worked","had been working","will be working"],a:2,e:"The activity continued for a period before a past reference point. Past Perfect Continuous emphasizes its duration."},
+ {q:"I promise I ___ you tonight.",o:["call","am calling yesterday","will call","had called"],a:2,e:"Will is commonly used for promises and decisions made at the moment of speaking."},
+ {q:"Look at those dark clouds! It ___.",o:["rains every day","is going to rain","rained","has rained"],a:1,e:"A prediction based on present evidence commonly uses be going to."},
+ {q:"This time next week, we ___ on the beach.",o:["relax","will be relaxing","have relaxed","were relaxing"],a:1,e:"This time next week points to an action in progress at a future time: Future Continuous."},
+ {q:"By 5 p.m. tomorrow, I ___ the report.",o:["finish","will finish yesterday","will have finished","am finishing last week"],a:2,e:"By + a future deadline emphasizes completion before that point: Future Perfect."},
+ {q:"By next June, he ___ here for ten years.",o:["works","will work","will have been working","has worked yesterday"],a:2,e:"The sentence emphasizes duration up to a future point: Future Perfect Continuous."}
+];
+const fillQuestions = [
+ {q:"My father (work) at a bank. He likes his job.",a:["works"],e:"A stable job or routine is described with Present Simple; father = he, so add -s."},
+ {q:"Be quiet! The baby (sleep).",a:["is sleeping"],e:"The action is happening now: is + V-ing."},
+ {q:"We (know) each other since primary school.",a:["have known"],e:"Know is usually a stative verb, so Present Perfect is more natural than a continuous form here. Since gives the starting point."},
+ {q:"I (wait) for 30 minutes and the bus still hasn't arrived.",a:["have been waiting"],e:"The activity began earlier and continues now; for 30 minutes emphasizes duration."},
+ {q:"They (not / attend) class yesterday.",a:["did not attend","didn't attend"],e:"Yesterday is a finished past time. Use did not + V1, not did not + V2."},
+ {q:"At 10 p.m. last night, I (read) a novel.",a:["was reading"],e:"The activity was in progress at a stated past time: was + V-ing."},
+ {q:"She (leave) before I got to the station.",a:["had left"],e:"Leaving happened before another past event, so use Past Perfect."},
+ {q:"The road was wet because it (rain) all night.",a:["had been raining"],e:"The continuous activity explains a past result and emphasizes duration before that past point."},
+ {q:"I think our teacher (give) us extra homework tomorrow.",a:["will give"],e:"Will can express a prediction or opinion about the future."},
+ {q:"Look! That child (fall) off the chair!",a:["is going to fall"],e:"The speaker predicts an imminent event from visible evidence: be going to."},
+ {q:"This time tomorrow, we (fly) to Singapore.",a:["will be flying"],e:"This time tomorrow describes an action in progress at a future time."},
+ {q:"By 2030, the city (build) a new metro line.",a:["will have built"],e:"By 2030 is a future deadline; the construction is expected to be complete by then."},
+ {q:"By next month, she (teach) here for ten years.",a:["will have been teaching"],e:"The sentence measures the duration of an ongoing activity up to a future point."}
+];
+function drawMcq(){
+ const list=document.getElementById("mcqList");
+ list.innerHTML=mcqQuestions.map(function(item,i){
+  const opts=item.o.map(function(opt,j){return '<label class="quiz-option"><input type="radio" name="mcq'+i+'" value="'+j+'"><span><b>'+String.fromCharCode(65+j)+'.</b> '+opt+'</span></label>';}).join("");
+  return '<article class="quiz-item" id="mcqItem'+i+'"><p class="quiz-q"><span class="qno">'+String(i+1).padStart(2,"0")+'</span>'+item.q+'</p><div class="quiz-options">'+opts+'</div><div class="quiz-feedback" id="mcqFeedback'+i+'"></div></article>';
+ }).join("");
+}
+function drawFill(){
+ const list=document.getElementById("fillList");
+ list.innerHTML=fillQuestions.map(function(item,i){
+  return '<article class="quiz-item" id="fillItem'+i+'"><label class="quiz-q" for="fillInput'+i+'"><span class="qno">'+String(i+1).padStart(2,"0")+'</span>'+item.q+'</label><input class="fill-input" id="fillInput'+i+'" type="text" autocomplete="off" placeholder="Type the correct verb form..."><div class="quiz-feedback" id="fillFeedback'+i+'"></div></article>';
+ }).join("");
+}
+function normalizeAnswer(value){return value.toLowerCase().trim().replace(/[’‘]/g,"'").replace(/[.!?]+$/,"").replace(/\s+/g," ");}
+function checkMcq(){
+ let score=0,answered=0;
+ mcqQuestions.forEach(function(item,i){
+  const choice=document.querySelector('input[name="mcq'+i+'"]:checked');
+  const feedback=document.getElementById("mcqFeedback"+i);
+  const card=document.getElementById("mcqItem"+i);
+  if(choice){answered++;if(Number(choice.value)===item.a)score++;}
+  const correct=String.fromCharCode(65+item.a)+". "+item.o[item.a];
+  feedback.className="quiz-feedback "+(choice&&Number(choice.value)===item.a?"good":"bad");
+  feedback.innerHTML=(choice&&Number(choice.value)===item.a?"Correct! ":"Review this one. ")+"<b>Answer: "+correct+"</b><br>"+item.e;
+ });
+ document.getElementById("mcqResult").textContent="Score: "+score+" / 13 · Answered: "+answered+" / 13";
+}
+function checkFill(){
+ let score=0,answered=0;
+ fillQuestions.forEach(function(item,i){
+  const input=document.getElementById("fillInput"+i),feedback=document.getElementById("fillFeedback"+i);
+  const value=normalizeAnswer(input.value);
+  const accepted=item.a.map(normalizeAnswer);
+  const correct=accepted.indexOf(value)!==-1;
+  if(value)answered++;if(correct)score++;
+  feedback.className="quiz-feedback "+(correct?"good":"bad");
+  feedback.innerHTML=(correct?"Correct! ":"Not quite. ")+"<b>Answer: "+item.a[0]+"</b><br>"+item.e;
+ });
+ document.getElementById("fillResult").textContent="Score: "+score+" / 13 · Answered: "+answered+" / 13";
+}
+function resetMcq(){
+ document.querySelectorAll('#mcqList input[type="radio"]').forEach(function(input){input.checked=false;});
+ document.querySelectorAll('#mcqList .quiz-feedback').forEach(function(el){el.className="quiz-feedback";el.textContent="";});
+ document.getElementById("mcqResult").textContent="Not submitted yet";
+}
+function resetFill(){
+ document.querySelectorAll('#fillList input').forEach(function(input){input.value="";});
+ document.querySelectorAll('#fillList .quiz-feedback').forEach(function(el){el.className="quiz-feedback";el.textContent="";});
+ document.getElementById("fillResult").textContent="Not submitted yet";
+}
+drawMcq();drawFill();
+document.getElementById("checkMcq").addEventListener("click",checkMcq);
+document.getElementById("resetMcq").addEventListener("click",resetMcq);
+document.getElementById("checkFill").addEventListener("click",checkFill);
+document.getElementById("resetFill").addEventListener("click",resetFill);
+
 </script>
 </body></html>
